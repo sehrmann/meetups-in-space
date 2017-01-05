@@ -1,0 +1,16 @@
+<h1>Create a Meetup</h1>
+
+<form action="/meetups/new" method="post">
+  <label for="meetup_name">Name:</label>
+  <input type="text" id="meetup_name" name="meetup_name" value=<%= @name_field %> >
+  <br>
+  <label for="meetup_description">Description:</label>
+  <input type="text" id="meetup_description" name="meetup_description" value=<%= @description_field %> >
+  <br>
+  <label for="meetup_location">Location:</label>
+  <input type="text" id="meetup_location" name="meetup_location" value=<%= @location_field %> >
+  <br>
+  <input type="submit">
+</form>
+
+<p><%= @error_msg %></p>
